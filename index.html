@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breaking bad quote</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="phrase" onclick="fetchQuote()">Your phrase of the day is...</h1>
+        <p id="quote"></p>
+        <p id="author"></p>
+    </div>
+
+
+    <!-- Botón para iniciar/detener el sonido -->
+    <button id="audioButton" onclick="toggleSound()">🎶 Click here for a better experience</button>
+
+    <audio id="quoteSound" src="Breaking Bad - Extended.mp3" loop></audio>
+    <script src="bb.js"></script>
+</body>
+</html>
